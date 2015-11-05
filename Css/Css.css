@@ -1,0 +1,52 @@
+html, body
+{
+    height: 99%;
+}
+.header {
+  	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #efefef;
+}
+.header header img {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	margin: 0 2% 0 2%;
+}
+.header nav {
+	background-color: #EDEDED;
+	margin: 35px 20px 20px 20px;
+	border-top: 1px solid #A8A8A8;
+
+}
+.header nav ul {
+	width: 100%;
+	text-align: center;
+	list-style: none;
+}
+.header li {
+	font-size: 20px;
+
+}
+.header li {
+	display: inline-block;
+	padding: 1% 2% 1% 2%;
+	background-color: #8C8C8C;
+	margin: 0 2% 0 2%;
+	border: 1px black solid;
+	border-radius: 2px;
+}
+.wrapper {
+	min-height: 100%;
+}
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem 0 10px;
+	background-color: #efefef;
+	text-align: center;
+}
