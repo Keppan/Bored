@@ -8,6 +8,10 @@ html, body
     right: 0;
     top: 0;
     background-color: #efefef;
+	border-bottom: 3px solid #fd8a17;
+	border-right: 5px solid #fd8a17;
+	border-left: 2px solid #fd8a17;
+	box-shadow: 1px 1px 0 #df7002, 2px 2px 0 #df7002, 3px 3px 3px rgba(0, 0, 0, 0.35);
 }
 .header header img {
 	width: 50px;
@@ -18,13 +22,14 @@ html, body
 .header nav {
 	background-color: #EDEDED;
 	margin: 35px 20px 20px 20px;
-	border-top: 1px solid #A8A8A8;
+	border-top: 1px solid #df7002;
 
 }
 .header nav ul {
 	width: 100%;
 	text-align: center;
 	list-style: none;
+	padding: 0;
 }
 .header li {
 	font-size: 20px;
@@ -33,13 +38,25 @@ html, body
 .header li {
 	display: inline-block;
 	padding: 1% 2% 1% 2%;
-	background-color: #8C8C8C;
+	background-color: rgba(255, 255, 255, 2.35);
 	margin: 0 2% 0 2%;
-	border: 1px black solid;
-	border-radius: 2px;
+	border: 3px outset #fd8a17;
+	border-radius: 8px;
+	box-shadow: 1px 1px 6px 0 #df7002,
 }
 .wrapper {
 	min-height: 100%;
+}
+.content {
+	width: 1000px;
+	height: 700px;
+	position: static;
+	margin: 0% 0% 0% 23%;
+	padding: 10% 0% 0% 0%;
+	background-color: rgba(0, 0, 0, 0.15);
+	border: 8px;
+	border-style: ridge;
+
 }
 .footer {
 	position: absolute;
