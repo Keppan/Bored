@@ -1,14 +1,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	animation: fadein 1s;
 }
 .wrapper {
 }
 .header {
 	height: 400px;
 	width: 100%;
-	background-color: #1FB547;
+	background-color: #E0E0E0;
 	padding: 0 0 0 0;
 	top:0;
 	left: 0;
@@ -19,7 +18,7 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background-color: #1BCC4A;
+	background-color: #B0B0B0;
 }
 .Nav li {
 	display: inline-block;
@@ -30,54 +29,5 @@ body {
     width: 120px;
     line-height: 50px;
     margin-right: -4px;
-    font-family: 'Lato', sans-serif;
+    font-family: arial;
 }
-.Nav a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    transition: .3s background-color;
-    height: 40px;
-}
- 
-.Nav a:hover {
-    background-color: #fff;
-    height: 40px;
-    color: #444;
-}
- 
-.Nav a.active {
-    background-color: #fff;
-    color: #444;
-    cursor: default;
-    height: 50px;
-}
-.Logo {
-	float: right;
-	width: 50px;
-	margin-top: 10px; 
-	animation: fadein 5s;
-}
-.Logo img {
-	width: 50px;
-	height: 50px;
-}
-.Text {
-	font-size: 100px;
-	float: left;
-	margin: 100px 0 auto 0;
-}
-.Text p{
-	animation: fadein 4s;
-	animation: float;
-	color: white;
-	font-family: 'Lato', sans-serif;
-	font-weight: 900;
-	margin: 0;
-	width: 480px;
-}
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-@keyframes 
