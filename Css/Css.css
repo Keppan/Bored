@@ -8,19 +8,19 @@ body {
 .header {
 	height: 400px;
 	width: 100%;
-	background-color: #1FB547;
+	background-color: #FFA600;
 	padding: 0 0 0 0;
 	top:0;
 	left: 0;
 	right: 0;
 	position: absolute;
-	animation: float 0.5s;
+	animation: float .5s;
 }
 .Nav ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background-color: #1BCC4A;
+	background-color: #FFBD42;
 }
 .Nav li {
 	display: inline-block;
@@ -44,14 +44,14 @@ body {
 .Nav a:hover {
     background-color: #fff;
     height: 40px;
-    color: #444;
+    color: #FFA600;
 }
  
 .Nav a.active {
     background-color: #fff;
-    color: #444;
+    color: #FFA600;
     cursor: default;
-    height: 50px;
+    height: 60px;
 }
 .Logo {
 	float: right;
@@ -62,17 +62,20 @@ body {
 .Logo img {
 	width: 50px;
 	height: 50px;
+	animation: fadein 2.5s forwards 1s;
+	opacity: 0;
 }
 .Text {
 	font-size: 100px;
 	float: left;
+	color: transparent;
 	margin: 100px 0 auto 100px;	
-	animation: floattext .8s;
+	animation: floattext .8s 0.5s forwards;
 	position: relative;
 }
 .Text p{
-	animation: fadein 4s;
-	color: white;
+	animation: fadetext 3s 0.5s forwards;
+	color: transparent;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	margin: 0;
@@ -85,6 +88,10 @@ body {
 @keyframes floattext {
 	from { left: -300px;}
 	to   { left: 0px;}
+}
+@keyframes fadetext {
+    from { opacity: 0; }
+    to   { opacity: 1;color:white; }
 }
 @keyframes float {
 	from { top: -300px;}
