@@ -14,6 +14,7 @@ body {
 	left: 0;
 	right: 0;
 	position: absolute;
+	animation: float 0.5s;
 }
 .Nav ul{
 	margin: 0;
@@ -65,11 +66,12 @@ body {
 .Text {
 	font-size: 100px;
 	float: left;
-	margin: 100px 0 auto 0;
+	margin: 100px 0 auto 100px;	
+	animation: floattext .8s;
+	position: relative;
 }
 .Text p{
 	animation: fadein 4s;
-	animation: float;
 	color: white;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
@@ -80,4 +82,15 @@ body {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-@keyframes 
+@keyframes floattext {
+	from { left: -300px;}
+	to   { left: 0px;}
+}
+@keyframes float {
+	from { top: -300px;}
+	to   { left: 0px;}
+}
+@keyframes floattext2 {
+	from { right: 4000px;}
+	to   { left: -300px;}
+}
