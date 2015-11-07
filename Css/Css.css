@@ -2,25 +2,29 @@ body {
 	margin: 0;
 	padding: 0;
 	animation: fadein 1s;
+	background-color: #367E91;
 }
 .wrapper {
+
 }
 .header {
-	height: 400px;
+	height: 300px;
 	width: 100%;
-	background-color: #FFA600;
+	background-color: #6CC46C;
 	padding: 0 0 0 0;
 	top:0;
 	left: 0;
 	right: 0;
 	position: absolute;
 	animation: float .5s;
+	box-shadow: 0px 3px 8px 1px rgba(50, 50, 50, 0.35);
 }
 .Nav ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background-color: #FFBD42;
+	background-color: #74D474;
+	box-shadow: 0px 3px 8px 1px rgba(50, 50, 50, 0.35);
 }
 .Nav li {
 	display: inline-block;
@@ -29,35 +33,39 @@ body {
 	text-align: center;
     height: 40px;
     width: 120px;
-    line-height: 50px;
+    line-height: 40px;
     margin-right: -4px;
     font-family: 'Lato', sans-serif;
+    text-shadow: 0px 2px 5px rgba(0, 100, 0, 1);;
+
 }
-.Nav a {
+.Nav ul a {
     text-decoration: none;
-    color: #fff;
     display: block;
-    transition: .3s background-color;
+    color: white;
+    transition: background-color .3s;
     height: 40px;
 }
  
-.Nav a:hover {
+.Nav ul a:hover {
     background-color: #fff;
     height: 40px;
-    color: #FFA600;
+    color: black;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.35);
 }
  
-.Nav a.active {
+.Nav ul a.active {
     background-color: #fff;
-    color: #FFA600;
+    color: #E0C424;
     cursor: default;
     height: 60px;
+    box-shadow: 0px 0px 8px 3px rgba(50, 50, 50, 0.35);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
 }
 .Logo {
 	float: right;
 	width: 50px;
 	margin-top: 10px; 
-	animation: fadein 5s;
 }
 .Logo img {
 	width: 50px;
@@ -65,11 +73,14 @@ body {
 	animation: fadein 2.5s forwards 1s;
 	opacity: 0;
 }
+.Logo img:hover {
+	background-color: transparent;
+}
 .Text {
 	font-size: 100px;
 	float: left;
 	color: transparent;
-	margin: 100px 0 auto 100px;	
+	margin: 100px 0 auto 20px;	
 	animation: floattext .8s 0.5s forwards;
 	position: relative;
 }
@@ -79,7 +90,15 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	margin: 0;
-	width: 480px;
+	width: 600px;
+}
+.content {
+	width: 1100px;
+	height: 800px;
+	position: relative;
+	float: right;
+	margin: 100px 100px 0 0 ;
+	animation: Content 1s 3s forwards;
 }
 @keyframes fadein {
     from { opacity: 0; }
@@ -100,4 +119,8 @@ body {
 @keyframes floattext2 {
 	from { right: 4000px;}
 	to   { left: -300px;}
+}
+@keyframes Content {
+	from { margin-top: 500px ;}
+	to   { margin-top: 100px;background-color: white;box-shadow: 0px 0px 8px 3px rgba(50, 50, 50, 0.35);}
 }
