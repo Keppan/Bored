@@ -1,23 +1,29 @@
 html {
-	height: 200%;
+	height: 100%;
 	width: 100%;
+	z-index: -3
 }
 body {
+	position:relative;
 	margin: 0;
 	padding: 0;
 	animation: fadein 1s;
 	background-color: #212121;
-	height: 200%;
+	height: 100%;
 	width: 100%;
 	min-height: 200%;
 	animation: overflow 6s;
 }
 .wrapper {
-
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: row;
 }
 .header {
-	height: 300px;
-	width: 100%;
+    height: 18.1em;
+    width: 100%;
+    min-width: 727px;
 	background-color: #424242;
 	padding: 0 0 0 0;
 	top:0;
@@ -26,14 +32,13 @@ body {
 	position: absolute;
 	animation: float .5s;
 	box-shadow: 0px 3px 8px 1px rgba(50, 50, 50, 0.35);
-	z-index: -2;
 }
 .Nav ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background-color: #74D474;
-	box-shadow: 0px 3px 8px 1px rgba(50, 50, 50, 0.35);
+	background-color: #424242;
+	box-shadow: 0px 3px 8px 1px rgba(50, 50, 50, 0.8);
 }
 .Nav li {
 	display: inline-block;
@@ -45,7 +50,7 @@ body {
     line-height: 40px;
     margin-right: -4px;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 0px 2px 5px rgba(0, 100, 0, 1);;
+    text-shadow: 0px 1px 2px rgba(224, 224, 224, 0.5);;
 
 }
 .Nav ul a {
@@ -103,11 +108,14 @@ body {
 	width: 600px;
 }
 .content {
-	width: 1100px;
-	height: 800px;
+	width: 80%;
+	height: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.boxcontent {
 	float: right;
-	margin: 100px 100px 0 700px ;
-	animation: Content 1s 1.5s forwards;
+	animation: boxcontent 1s 1.5s forwards;
 	position: absolute;
 }
 .footer {
@@ -145,7 +153,7 @@ body {
 	from { right: 4000px;}
 	to   { left: -300px;}
 }
-@keyframes Content {
+@keyframes boxcontent {
 	from { margin-top: 500px ;}
 	to   { margin-top: 100px;background-color: white;box-shadow: 0px 0px 8px 3px rgba(50, 50, 50, 0.35);}
 }
