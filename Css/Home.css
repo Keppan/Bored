@@ -1,0 +1,155 @@
+html {
+	height: 200%;
+	width: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	animation: fadein 1s;
+	background-color: #212121;
+	height: 200%;
+	width: 100%;
+	min-height: 200%;
+	animation: overflow 6s;
+}
+.wrapper {
+
+}
+.header {
+	height: 300px;
+	width: 100%;
+	background-color: #424242;
+	padding: 0 0 0 0;
+	top:0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	animation: float .5s;
+	box-shadow: 0px 3px 8px 1px rgba(50, 50, 50, 0.35);
+	z-index: -2;
+}
+.Nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #74D474;
+	box-shadow: 0px 3px 8px 1px rgba(50, 50, 50, 0.35);
+}
+.Nav li {
+	display: inline-block;
+    font-size: 1.2em;
+	color: white;
+	text-align: center;
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    margin-right: -4px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 2px 5px rgba(0, 100, 0, 1);;
+
+}
+.Nav ul a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    transition: background-color .3s;
+    height: 40px;
+}
+ 
+.Nav ul a:hover {
+    background-color: #fff;
+    height: 40px;
+    color: black;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.35);
+}
+ 
+.Nav ul a.active {
+    background-color: #fff;
+    color: black;
+    cursor: default;
+    height: 60px;
+    box-shadow: 0px 0px 8px 3px rgba(50, 50, 50, 0.35);
+    text-shadow: 0px 0px 0px;
+}
+.Logo {
+	float: right;
+	width: 50px;
+	margin-top: 20px; 
+	margin-right: 40px;
+}
+.Logo img {
+	width: 80px;
+	height: 80px;
+	animation: fadein 2.2s forwards 4s;
+	opacity: 0;
+}
+.Logo img:hover {
+	background-color: transparent;
+}
+.Text {
+	font-size: 100px;
+	float: left;
+	color: transparent;
+	margin: 100px 0 auto 20px;	
+	animation: floattext .8s 0.5s forwards;
+	position: relative;
+}
+.Text p{
+	animation: fadetext 3s 0.5s forwards;
+	color: transparent;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	margin: 0;
+	width: 600px;
+}
+.content {
+	width: 1100px;
+	height: 800px;
+	float: right;
+	margin: 100px 100px 0 700px ;
+	animation: Content 1s 1.5s forwards;
+	position: absolute;
+}
+.footer {
+	bottom:0;
+	position: absolute;
+	right: 0;
+	left: 0;
+	color: white;
+    line-height: 1px;
+    text-align: right;
+    margin-right:10px ;
+    font-family: 'Roboto', sans-serif;
+}
+.footer a{
+	text-decoration: none;
+	color: orange;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes floattext {
+	from { left: -300px;}
+	to   { left: 0px;}
+}
+@keyframes fadetext {
+    from { opacity: 0; }
+    to   { opacity: 1;color:white; }
+}
+@keyframes float {
+	from { top: -300px;}
+	to   { left: 0px;}
+}
+@keyframes floattext2 {
+	from { right: 4000px;}
+	to   { left: -300px;}
+}
+@keyframes Content {
+	from { margin-top: 500px ;}
+	to   { margin-top: 100px;background-color: white;box-shadow: 0px 0px 8px 3px rgba(50, 50, 50, 0.35);}
+}
+@keyframes overflow {
+	from { overflow: hidden;}
+	to { overflow: visible;}
+}
