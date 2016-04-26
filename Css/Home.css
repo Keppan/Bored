@@ -12,7 +12,7 @@ body {
 	height: 100%;
 	width: 100%;
 	min-height: 200%;
-	overflow: hidden;
+
 }
 .wrapper {
 	display: flex;
@@ -132,6 +132,11 @@ body {
 .footer a{
 	text-decoration: none;
 	color: orange;
+}.header, .header * { transition: all 0.3s ease; }
+
+.header.shrinked {
+  height: 30px;
+  opacity: 0;
 }
 @keyframes fadein {
     from { opacity: 0; }
@@ -156,10 +161,4 @@ body {
 @keyframes boxcontent {
 	from { margin-top: 6em ;}
 	to   { margin-top: 0em;padding :0 auto;background-color: rgb(207, 216, 220);box-shadow: 0px 0px 8px 3px rgba(50, 50, 50, 0.35);}
-}
-.header, .header * { transition: all 0.3s ease; }
-
-.header.shrinked {
-  height: 30px;
-  opacity: 0;
 }
