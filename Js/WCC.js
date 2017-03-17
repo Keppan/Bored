@@ -1,4 +1,4 @@
-var myArray = ["- Welcome!", "- Välkommen!", "- Bienvenido!", "- Willkommen", "- Bonjour!"];
+var myArray = ["- Welcome!", "- Välkommen!", "- Bienvenido!", "- Willkommen!", "- Bonjour!"];
 var rand = Math.floor(Math.random() * myArray.length);
 
 function showquote(){
