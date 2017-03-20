@@ -136,19 +136,12 @@ main {
 	padding-top: 50vw;
 }
 .img1 {
-		background-image: url(../Resources/gbg.jpg);
+		background-image: url("../Resources/gbg.jpg");
+		height: 500px;
+	    background-position:center top;
+	    background-repeat: no-repeat;
+	    background-size: 100% 100%;
 
-
-    /* Set a specific height */
-    height: 800px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    box-shadow: inset 0px 9px 9px -4px rgba(0,0,0,0.75);
 }
 footer {
 	bottom:0;
