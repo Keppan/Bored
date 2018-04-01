@@ -25,7 +25,8 @@ header {
 
 Header nav{
 	height: 100%;
-	width: 40.65em;
+	width: 60%;
+	float: left;
 }
 
 header nav a{
@@ -37,4 +38,14 @@ header nav a{
     text-align: center;
     margin: 0.5em;
 	
+}
+.profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: url(http://78.media.tumblr.com/18ee6b3b5d1c1454ef1bed6f879a7863/tumblr_p1skmqRJjf1rpwm80o1_250.jpg);
+    background-size: contain;
+    display: inline-block;
+    float: right;
+    margin: 10px;
 }
