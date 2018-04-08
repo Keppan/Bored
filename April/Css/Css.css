@@ -30,18 +30,22 @@ Header nav{
 }
 
 header nav a{
-    height: 40px;
+    height: 30px;
     width: 120px;
-    padding: 1em 1em 0 1em;
+    padding: 0.2em 0.2em 0 0.2em;
     display: inline-block;
     border: 3px black solid;
     text-align: center;
-    margin: 0.5em;
+    margin: 0 0.5em 0.5em 0.5em;
+    margin-top:2em ;
 	
 }
+header nav a:hover{
+background-color: red;
+}
 .profile {
-    width: 60px;
-    height: 60px;
+    width: 3.75em;
+    height: 3.75em;
     border-radius: 100%;
     background: url(http://78.media.tumblr.com/18ee6b3b5d1c1454ef1bed6f879a7863/tumblr_p1skmqRJjf1rpwm80o1_250.jpg);
     background-size: contain;
